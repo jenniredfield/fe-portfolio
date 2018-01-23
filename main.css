@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     /* height: 100vh; */
-    width: 100vw;
+    width: 100%;
     font-family: Trebuchet MS;
 
 
@@ -17,7 +17,7 @@ body {
 #particles-js {
 
     height:100%;
-    width: 100vw;
+    width: 100%;
     /* background: url('./img/gal3.png') no-repeat center;
     background-size: cover; */
     text-align: center;
@@ -38,7 +38,7 @@ body {
     font-family: 'Fredoka One', cursive;
     color: #BF0932;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ body {
   .about-title {
       /* height: 40vh; */
       
-      flex: 2 1 60vw;
+      flex: 2 1 60%;
       padding: 50px;
       padding-left: 100px;
       display: flex;
@@ -96,7 +96,7 @@ body {
 
   .about-details {
 
-      flex: 1 1 40vw;
+      flex: 1 1 40%;
       padding-right: 150px;
       display: flex;
       justify-content: center;
@@ -243,8 +243,21 @@ body {
     }
 
     @media screen and (max-width: 750px) {
+
+
+
+
         body, html {
             height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+
+
+        .centerDiv {
+            margin: 0;
         }
 
         #about {
@@ -262,6 +275,11 @@ body {
             flex-direction: column;
             justify-content: center;
             text-align: justify;
+            padding: 0;
+    }
+
+    .about-title h2 {
+        padding: 10px;
     }
 
     .about-title p {
@@ -270,6 +288,7 @@ body {
 
     .about-title .icons {
         width: 40%;
+       
     }
 
     .logo > img {
@@ -283,11 +302,15 @@ body {
 
             flex: 1 1 100vw;
             flex-wrap: wrap;
-            padding: 40px;
+            padding: 40px 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+         }
+
+         .about-title p {
+             padding: 20px;
          }
 
          #projects {
@@ -305,6 +328,10 @@ body {
 
         .pr-desc, .pr-pic {
             flex: 1 1 100%;
+        }
+
+        footer{
+            padding: 20px 0;
         }
 
     }
